@@ -15,7 +15,7 @@ mongoose.connect(
         useNewUrlParser: true, 
         useUnifiedTopology: true 
     }, 
-    () => console.log('connected to DB')
+    () => console.log('connected to MongoDB')
 );
 
 //Middelware
