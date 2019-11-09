@@ -6,12 +6,11 @@ const mongoose = require('mongoose');
 //Import Routes
 const authRoute= require('./routes/auth');
 
-//dotenv.config();    
+dotenv.config();    
 
 //connecttoDb
 mongoose.connect(
-    //process.env.DB_CONNECT,
-    'mongodb+srv://gmujica:6842@cluster0-ivcbw.mongodb.net/test?retryWrites=true&w=majority', 
+    process.env.DB_CONNECT,
     { 
         useNewUrlParser: true, 
         useUnifiedTopology: true 
